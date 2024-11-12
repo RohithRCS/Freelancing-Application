@@ -1,0 +1,106 @@
+/* General Page Layout */
+.new-project-page {
+    margin: 5vh auto;
+    padding: 3vh 4vw;
+    max-width: 900px;
+    background-color: #f4f6f9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 25px 0px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styling */
+  .new-project-page h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2vh;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Form Container */
+  .new-project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 2vh;
+  }
+  
+  /* Label Styling */
+  .new-project-form label {
+    text-align: center;  /* Centers label text */
+    font-size: 1rem;
+    color: #777;
+    font-weight: bold;
+    margin-bottom: 5px;  /* Adds space between label and input */
+  }
+  
+  /* Input Fields */
+  .new-project-form .form-floating {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .new-project-form input,
+  .new-project-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Floating Labels */
+  .new-project-form input,
+  .new-project-form textarea {
+    text-align: left; /* Text inside inputs and textareas will remain left-aligned */
+  }
+  
+  /* Button */
+  .new-project-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #4e79e0, #2874cc); /* Blue gradient */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .new-project-form button:hover {
+    background: linear-gradient(135deg, #2874cc, #4e79e0); /* Blue gradient on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Grid Layout for Budget and Skills */
+  .new-project-form span {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+  }
+  
+  .new-project-form span .form-floating {
+    width: 100%;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .new-project-page {
+      width: 90%;
+      padding: 3vh 2vw;
+    }
+  
+    .new-project-form span {
+      grid-template-columns: 1fr;
+    }
+  }
+  

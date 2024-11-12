@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Page Container */
+  .project-data-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  /* Project Data Section */
+  .project-data-container {
+    width: 60%;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-data-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-data h3 {
+    font-size: 2.5rem;
+    color: #1f1f1f;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .project-data p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-data span h5 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0.8rem;
+  }
+  
+  .required-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .required-skills p {
+    color: #ee450e;
+    border: 1px solid #ee450e;
+
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+  }
+  
+  .required-skills p:hover {
+    background: #ffffff;
+  }
+  
+  /* Project Form */
+  .project-form-body {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-form-body h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .project-form-body input,
+  .project-form-body textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .project-form-body input:focus,
+  .project-form-body textarea:focus {
+    border-color: #32c6a6;
+    outline: none;
+    box-shadow: 0 0 6px rgba(50, 198, 166, 0.4);
+  }
+  
+  .project-form-body button {
+    width: 100%;
+    background: #32c6a6;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .project-form-body button:hover {
+    background: #27a68e;
+  }
+  
+  /* Chat Section */
+  .project-chat-container {
+    width: 35%;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-chat-container h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .chat-body {
+    height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .chat-messages .my-message,
+  .chat-messages .received-message {
+    max-width: 75%;
+    padding: 14px;
+    border-radius: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .chat-messages .my-message {
+    align-self: flex-end;
+    background: #ffffff;
+    color: #fff;
+  }
+  
+  .chat-messages .received-message {
+    align-self: flex-start;
+    color: #333;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-input input {
+    width: 85%;
+    height: 3.5rem;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .chat-input input:focus {
+    border-color: #32c6a6;
+    outline: none;
+  }
+  
+  .chat-input button {
+    width: 12%;
+    background: #32c6a6;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background: #27a68e;
+  }
+  
+  /* Footer (Optional) */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #32c6a6;
+    color: #fff;
+    margin-top: 3rem;
+    border-radius: 0.8rem;
+  }
+  

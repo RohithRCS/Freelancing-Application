@@ -1,0 +1,132 @@
+.freelancer-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0;
+}
+
+.home-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 5vh;
+}
+
+.home-card {
+  width: 22%;
+  padding: 3vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(231, 220, 215, 0.13);
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(196, 191, 189, 0.26);
+}
+
+.home-card h4 {
+  font-size: 1.2rem;
+  color: #2b2a2a;
+  font-weight: 400;
+}
+
+.home-card p {
+  color: #636363;
+}
+
+.home-card button {
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(0, 17, 170);
+;
+
+  border: 1.5px solid rgb(0, 17, 170);
+
+
+;
+
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  width: 85%;
+  border-radius: 0.4rem;
+  margin-top: 1vh;
+}
+
+.home-card button:hover {
+  background-color: rgb(0, 17, 170);
+
+
+;
+
+  color: #f1e3e4;
+  border: 1.5px solid rgb(0, 17, 170);
+
+
+;
+
+}
+
+.freelancer-details {
+  width: 80%;
+  margin-top: 10vh;
+  padding: 3vh;
+  background: rgba(231, 220, 215, 0.13);
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(196, 191, 189, 0.26);
+}
+
+.freelancer-details-data span {
+  margin-bottom: 2vh;
+}
+
+.freelancer-details-data h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+
+.freelancer-details-data .skills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.freelancer-details-data .skill {
+  font-size: 0.9rem;
+  border: 1px solid rgb(255, 70, 70);
+
+
+;
+
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(255, 70, 70);
+
+
+;
+
+  padding: 8px 14px;
+  border-radius: 1rem;
+}
+
+.freelancer-details-update input,
+.freelancer-details-update textarea {
+  width: 100%;
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 0.5rem;
+}
+
+.freelancer-details-update textarea {
+  min-height: 16vh;
+}
+
+.freelancer-details-update button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2vh;
+}

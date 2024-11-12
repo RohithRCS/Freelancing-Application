@@ -1,0 +1,99 @@
+.user-applications-page {
+    padding: 2vh 2vw;
+    background-color: #f9f9f9;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e64a2;
+    margin-bottom: 2vh;
+  }
+  
+  .user-applications-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .user-application-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2vh;
+    box-shadow: rgba(60, 64, 67, 0.2) 0px 4px 6px 0px, rgba(60, 64, 67, 0.12) 0px 1px 3px 0px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .user-application-card:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 8px 12px 0px, rgba(60, 64, 67, 0.18) 0px 4px 6px 0px;
+  }
+  
+  .user-application-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vh;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .status-badge.accepted {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  .status-badge.rejected {
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  
+  .user-application-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+  }
+  
+  .application-section {
+    width: 48%;
+  }
+  
+  .application-section h5 {
+    font-size: 1.1rem;
+    color: #1e64a2;
+    margin-bottom: 1vh;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    background-color: #ccc;
+    height: 100%;
+  }
+  
+  .application-proposal {
+    margin-top: 2vh;
+  }
+  
+  .skills-section {
+    margin-top: 2vh;
+  }
+  
+  .skills-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-badge {
+    background-color: #ee4950;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+  

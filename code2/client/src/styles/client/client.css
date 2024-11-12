@@ -1,0 +1,147 @@
+/* General Container */
+.client-container {
+  height: 100vh;
+  width: 90%; /* Set width to 80% of the screen */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  color: rgb(0,17,170);
+  width: 100%; /* Ensure the header takes up full width of its container */
+  box-sizing: border-box; /* Include padding in width */
+  z-index: 10;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.header select:hover {
+  background-color: #f1f1f1;
+}
+
+/* Project List */
+.project-list {
+  display: flex;
+  flex-direction: column; /* Row by row layout */
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling only */
+  flex: 1;
+  width: 100%; /* Ensure the project list fills the container width */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Project Card */
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 100%; /* Make the project card take up full width of its container */
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: rgb(0,17,170);
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Project Footer */
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.project-footer .budget {
+  font-weight: bold;
+  color: #43a047;
+}
+
+.project-footer .status {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.project-footer .status.available {
+  background-color: #fff3e0;
+  color: #ff6f00;
+}
+
+.project-footer .status.assigned {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+}
+
+.project-footer .status.completed {
+  background-color: #e8f5e9;
+  color: #43a047;
+}
+
+/* Scrollbar Styling */
+.project-list {
+  scrollbar-width: thin;
+  scrollbar-color: #b4b4b4 #e0e0e0;
+}
+
+.project-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-list::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 8px;
+}
+
+.project-list::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Prevent page horizontal scrolling */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}

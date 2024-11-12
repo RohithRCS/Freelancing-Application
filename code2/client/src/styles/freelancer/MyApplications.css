@@ -1,0 +1,109 @@
+.user-applications-page {
+    padding: 2vh 2vw;
+  }
+  
+  .user-applications-page h3 {
+    text-align: left; /* Left-align the heading */
+    font-size: 1.5rem;
+    color:rgb(0, 17, 170);
+    margin-bottom: 1vh;
+  }
+  
+  .user-applications-body {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 76vh;
+    border-radius: 0.7rem;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    overflow-y: scroll;
+  }
+  
+  .user-application {
+    padding: 2vh 2vw;
+    cursor: pointer;
+  }
+  
+  .user-application:hover {
+    background-color: rgba(12, 105, 148, 0.071);
+  }
+  
+  .user-application-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow the sections to wrap on smaller screens */
+  }
+  
+  .user-application hr {
+    height: 2px;
+    background-color: rgba(84, 86, 86, 0.377);
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    background-color: rgba(110, 109, 109, 0.233);
+    height: inherit;
+  }
+  
+  .user-application-half {
+    width: 48%;
+    margin-bottom: 1vh; /* Add some space between the two halves */
+  }
+  
+  .user-application-half h4 {
+    font-size: 1.2rem;
+    color: rgba(0,17,170);
+  }
+  
+  .user-application-half p {
+    font-size: 0.9rem;
+    margin-bottom: 1vh; /* Add space between paragraphs */
+  }
+  
+  .user-application-half h5 {
+    font-size: 1rem;
+    color: rgb(0, 17, 170);
+  }
+  
+  .user-application-half h6 {
+    font-size: 1rem;
+  }
+  
+  .user-application-half .application-info {
+    margin-top: 1vh;
+  }
+  
+  .user-application-half span {
+    display: block;
+  }
+  
+  .user-application-half .application-skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow skills to wrap */
+  }
+  
+  .user-application-half .application-skills p {
+    color: #ffffff;
+    border: 1px solid #ee4950;
+    background-color: #ee4950;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .user-application-half h6 b {
+    color: rgb(130, 131, 130);
+  }
+  
+  @media (max-width: 768px) {
+    .user-application-body {
+      flex-direction: column; /* Stack the application details on smaller screens */
+    }
+  
+    .user-application-half {
+      width: 100%; /* Make both halves full width on smaller screens */
+    }
+  }
+  

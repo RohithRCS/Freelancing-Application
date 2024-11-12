@@ -1,0 +1,175 @@
+/* General container */
+.all-projects-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh auto;
+    padding: 2vh 4vw;
+    max-width: 1400px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+
+/* Filters panel */
+.project-filters {
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+    padding: 3vh 2vw;
+    height: 85vh;
+    border-radius: 1rem;
+    background-color: #fff;
+    overflow-y: auto;
+    position: sticky;
+    top: 5vh;
+}
+
+.project-filters h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+/* Filters */
+.filters {
+    margin-top: 2vh;
+}
+
+.filters h5 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.filter-options {
+    font-size: 1rem;
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check {
+    margin-bottom: 1vh;
+}
+
+.form-check-input {
+    margin-right: 8px;
+}
+
+/* Projects list */
+.projects-list {
+    width: 70%;
+    height: 85vh;
+    overflow-y: auto;
+    padding: 2vh 2vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.projects-list h3 {
+    font-size: 1.8rem;
+    color: rgb(0, 17, 170);
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+/* Listed project styling */
+.listed-project {
+    padding: 2vh 2vw;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    position: relative;
+    border-radius: 0.8rem;
+    background-color: #f9f9f9;
+    margin-bottom: 4vh;
+}
+
+.listed-project:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* Project header */
+.listed-project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.listed-project-head h3 {
+    font-size: 1.4rem;
+    color: rgb(0, 17, 170);
+    font-weight: 500;
+}
+
+.listed-project-head p {
+    font-size: 0.95rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Project content */
+.listed-project h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 1vh 0;
+    font-weight: 500;
+}
+
+.listed-project p {
+    font-size: 1rem;
+    color: #444;
+    margin: 1vh 0;
+    line-height: 1.4;
+}
+
+/* Skills section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1vh;
+}
+
+.skills h6 {
+    font-size: 0.95rem;
+    color: rgb(255, 70, 70);
+    border: 1px solid rgb(255, 70, 70);
+    padding: 5px 10px;
+    border-radius: 0.4rem;
+    font-weight: 500;
+}
+
+/* Bids section */
+.bids-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.bids-data p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.bids-data h6 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    position: absolute;
+    bottom: -72px;
+    right: 0;
+    padding: 0.7vh 1.5vw;
+    background-color: #e9ecef;
+    border-top-left-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* Hover effect for filter checkboxes */
+.form-check-input:checked + .form-check-label {
+    color: rgb(0, 17, 170);
+    font-weight: 600;
+}
