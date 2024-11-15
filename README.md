@@ -73,7 +73,7 @@ Navigate to the backend folder and run:
 
     node index.js
 
-The frontend will be available at http://localhost:8000.
+The backend will be available at http://localhost:8000.
 
 ---
 ## Folder Structure
